@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" class="form">
+      <h1 class="text-center">Formulario reserva de salas</h1>
+
+      <!-- Barra progreso -->
+      <div class="progressbar">
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+      </div>
+      <!-- PRIMER PASO -->
+
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <label for="name">Nombre</label>
+          <input type="text" name="nombre" id="name" />
+        </div>
+        <div class="input-group">
+          <label for="rut">Rut</label>
+          <input type="text" name="rut" id="rut" pattern="^(0|[1-9][0-9]*)$" />
+        </div>
+        <div class="input-group">
+          <label for="">Email</label>
+          <input type="email" />
+        </div>
+        <div class="input-group">
+          <label for="">Carrera</label>
+          <select name="" id="">
+            <option value="">Selecciona tu carrera</option>
+            <option value="apub">Administración Pública</option>
+            <option value="arq">Arquitectura</option>
+            <option value="bach">
+              Bachillerato en Ciencias de la Ingeniería
+            </option>
+            <option value="bib">Bibliotecología y Documentación</option>
+            <option value="cpa">Contador Público y Auditor</option>
+            <option value="dpro">Dibujante Proyectista</option>
+            <option value="dcv">Diseño en Comunicación Visual</option>
+            <option value="dind">Diseño Industrial</option>
+            <option value="ice">Ingeniería Civil Electrónica</option>
+            <option value="iccd">Ingeniería Civil en Ciencia de Datos</option>
+            <option value="icci">
+              Ingeniería Civil en Computación mención Informática
+            </option>
+            <option value="icm">Ingeniería Civil en Mecánica</option>
+            <option value="icoc">Ingeniería Civil en Obras Civiles</option>
+            <option value="icprm">
+              Ingeniería Civil en Prevención de Riesgos y Medioambiente
+            </option>
+            <option value="ici">Ingeniería Civil Industrial</option>
+            <option value="icom">Ingeniería Comercial</option>
+            <option value="iaag">
+              Ingeniería en Administración Agroindustrial
+            </option>
+            <option value="ibio">Ingeniería en Biotecnología</option>
+            <option value="icin">Ingeniería en Comercio Internacional</option>
+            <option value="icon">Ingeniería en Construcción</option>
+            <option value="igeo">Ingeniería en Geomensura</option>
+            <option value="igtu">Ingeniería en Gestión Turística</option>
+            <option value="iial">Ingeniería en Industria Alimentaria</option>
+            <option value="iinf">Ingeniería en Informática</option>
+            <option value="iqui">Ingeniería Química</option>
+            <option value="iind">Ingeniería Industrial</option>
+            <option value="qind">Química Industrial</option>
+            <option value="tsoc">Trabajo Social</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="">Cantidad</label>
+          <input type="number" min="2" max="30" />
+        </div>
+        <div class="input-group">
+          <label for="">Proyector</label>
+          <input type="checkbox" />
+        </div>
+        <div class="">
+          <a href="#" class="btn btn-next width-50 ml-auto">Siguiente</a>
+        </div>
+      </div>
+
+      <!-- SEGUNDO PASO -->
+
+      <div class="form-step">
+        <div class="input-group">
+          <label for="E390">Espacio 390</label>
+          <input type="radio" name="building" id="E390" />
+        </div>
+        <div class="input-group">
+          <label for="BCC">Biblioteca Campus Central</label>
+          <input type="radio" name="building" id="BCC" />
+        </div>
+        <div class="">
+          <a href="#" class="btn btn-prev width-50 mr-auto">Anterior</a>
+        </div>
+      </div>
+
+      <!-- TERCER PASO E390 -->
+
+      <div class="form-step">
+        <div class="input-group">
+          <label for="">Mesa 1</label>
+          <input type="radio" name="" id="" />
+        </div>
+        <div class="input-group">
+          <label for="">Mesa 2</label>
+          <input type="radio" name="" id="" />
+        </div>
+        <div class="input-group">
+          <label for="">Mesa 1 y 2</label>
+          <input type="radio" name="" id="" />
+        </div>
+        <div class="">
+          <a href="#" class="btn btn-prev width-50 mr-auto">Anterior</a>
+        </div>
+      </div>
+
+      <!-- TERCER PASO BCC -->
+
+      <div class="form-step">
+        <div class="input-group">
+          <label for="">Sala 1</label>
+          <input type="radio" name="" id="" />
+        </div>
+        <div class="input-group">
+          <label for="">Sala 2</label>
+          <input type="radio" name="" id="" />
+        </div>
+        <div class="input-group">
+          <label for="">Sala de Reuniones</label>
+          <input type="radio" name="" id="" />
+        </div>
+        <div class="input-group">
+          <label for="">Sala de Conferencias</label>
+          <input type="radio" name="" id="" />
+        </div>
+        <input class="btn" type="button" value="" />
+      </div>
+    </form>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
