@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Document</title>
+    <script src="assets/js/script.js" defer></script>
+    <title>Registraion Form</title>
   </head>
   <body>
     <form action="#" class="form">
-      <h1 class="text-center">Formulario reserva de salas</h1>
-
-      <!-- Barra progreso -->
+      <h1 class="text-center">Registration Form</h1>
+      <!-- Progress bar -->
       <div class="progressbar">
         <div class="progress" id="progress"></div>
+
         <div
           class="progress-step progress-step-active"
           data-title="Datos"
@@ -24,8 +25,8 @@
         <div class="progress-step" data-title="Revisión"></div>
         <div class="progress-step" data-title="Listo"></div>
       </div>
-      <!-- PRIMER PASO -->
 
+      <!-- Steps -->
       <div class="form-step form-step-active">
         <div class="input-group">
           <label for="name">Nombre</label>
@@ -90,69 +91,71 @@
           <label for="check-apple"></label>
           <h3>Necesitas proyector</h3>
         </div>
+
         <div class="">
-          <a href="#" class="btn btn-next width-50 ml-auto">Siguiente</a>
+          <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
         </div>
       </div>
-
-      <!-- SEGUNDO PASO -->
-
-      <div class="form-step">
+      <div class="form-step" id="edificios">
         <div class="input-group">
           <label for="E390">Espacio 390</label>
-          <input type="radio" name="building" id="E390" />
+          <input type="radio" name="building" id="E390" class="btn-next" />
         </div>
         <div class="input-group">
           <label for="BCC">Biblioteca Campus Central</label>
-          <input type="radio" name="building" id="BCC" />
+          <input type="radio" name="building" id="BCC" class="btn-next" />
         </div>
         <div class="">
           <a href="#" class="btn btn-prev width-50 mr-auto">Anterior</a>
         </div>
       </div>
 
-      <!-- TERCER PASO E390 -->
-
-      <div class="form-step hidden">
+      <div class="form-step" id="build-e390">
         <div class="input-group">
           <label for="">Mesa 1</label>
-          <input type="radio" name="" id="" />
+          <input type="radio" name="sala390" id="mesa1" class="btn-next" />
         </div>
         <div class="input-group">
           <label for="">Mesa 2</label>
-          <input type="radio" name="" id="" />
+          <input type="radio" name="sala390" id="mesa2" class="btn-next" />
         </div>
         <div class="input-group">
           <label for="">Mesa 1 y 2</label>
-          <input type="radio" name="" id="" />
+          <input type="radio" name="sala390" id="mesas" class="btn-next" />
+        </div>
+        <div class="">
+          <a href="#" class="btn btn-prev width-50 mr-auto">Anterior</a>
+        </div>
+      </div>
+      <div class="form-step" id="build-bcc">
+        <div class="input-group">
+          <label for="">Sala 1</label>
+          <input type="radio" name="salabcc" id="sala1" class="btn-next" />
+        </div>
+        <div class="input-group">
+          <label for="">Sala 2</label>
+          <input type="radio" name="salabcc" id="sala2" class="btn-next" />
+        </div>
+        <div class="input-group">
+          <label for="">Sala Reuniones/Estudio</label>
+          <input type="radio" name="salabcc" id="salare" class="btn-next" />
+        </div>
+        <div class="input-group">
+          <label for="">Sala Multiproposito</label>
+          <input type="radio" name="salabcc" id="salam" class="btn-next" />
         </div>
         <div class="">
           <a href="#" class="btn btn-prev width-50 mr-auto">Anterior</a>
         </div>
       </div>
 
-      <!-- TERCER PASO BCC -->
 
-      <div class="form-step hidden">
-        <div class="input-group">
-          <label for="">Sala 1</label>
-          <input type="radio" name="" id="" />
+      <div class="form-step" id="calendarM1">
+        <div id="botones-container"></div>
+        <div id="horas-container"></div>
+          <a href="#" class="btn btn-prev width-50 mr-auto">Anterior</a>
         </div>
-        <div class="input-group">
-          <label for="">Sala 2</label>
-          <input type="radio" name="" id="" />
-        </div>
-        <div class="input-group">
-          <label for="">Sala de Reuniones</label>
-          <input type="radio" name="" id="" />
-        </div>
-        <div class="input-group">
-          <label for="">Sala de Conferencias</label>
-          <input type="radio" name="" id="" />
-        </div>
-        <input class="btn" type="button" value="" />
       </div>
     </form>
-    <script src="assets/js/script.js"></script>
   </body>
 </html>
